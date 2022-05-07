@@ -17,14 +17,23 @@ article {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+p, h2 {
+    font-size: 24px;
+    color: #333;
 }
 
 h2 {
     font-weight: normal;
+
 }
 
 p {
-    margin: 50px 0;
+    margin-top: 50px;
     font-size: 20px;
 }
 
@@ -32,6 +41,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 34px;
     transform: translate(-50%, -50%);
     color: #222;
 }
