@@ -9,14 +9,15 @@ body {
     height: 100vh;
     background-color: darkkhaki;
     font-family: 'Arial', sans-serif;
+    text-align: center;
+
 }
 
 article {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     background-color: #fff;
     padding: 20px;
     border: 1px solid black;
@@ -28,7 +29,8 @@ article:hover h2 {
     font-size: 24px;
 }
 
-p, h2 {
+p,
+h2 {
     font-size: 20px;
     color: #333;
     transition: 1s
@@ -46,9 +48,33 @@ p {
 
 h1 {
     position: absolute;
+    line-height: 100px;
+    width: 30%;
+    height: 100px;
     top: 50%;
     left: 50%;
-    font-size: 34px;
     transform: translate(-50%, -50%);
+    font-size: 34px;
     color: #222;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.2s
+}
+
+h1:hover::after {
+    top: 50%;
+    background-color: #fff;
 }
