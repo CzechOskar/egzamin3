@@ -22,18 +22,25 @@ article {
     border: 1px solid black;
 }
 
-p, h2 {
+article:hover p,
+article:hover h2 {
+    color: red;
     font-size: 24px;
+}
+
+p, h2 {
+    font-size: 20px;
     color: #333;
+    transition: 1s
 }
 
 h2 {
     font-weight: normal;
-
+    text-decoration: underline;
 }
 
 p {
-    margin-top: 50px;
+    margin-top: 3rem;
     font-size: 20px;
 }
 
